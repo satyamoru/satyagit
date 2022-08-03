@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                git credentialsId: 'cc983899-ad47-404d-9d6e-bc3bee986f0c', url: 'https://github.com/satyamoru/satyagit.git'
+            }
+        }
+    }
+}
